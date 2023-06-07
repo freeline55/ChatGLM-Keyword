@@ -28,13 +28,20 @@
 
 ## 4. 项目呈现效果（截至2023/06/06）
 
-![](C:\Users\15308\AppData\Roaming\marktext\images\2023-06-06-20-22-26-29b3daa474c673102a345deb76314fa.png)
+![](imgs/Picture_01.png)
 
 ## 5. 项目贡献名单
 
 | 贡献者   | 贡献内容 |
 | ----- | ---- |
-| User1 | Text |
-| User2 | Text |
+| 星辰 | 队长 |
+| 沉淀 | 应用方向调研、gpt能力调研、langchain-chatglm部署等 |
+| 何材 | streamlit前端技术学习，pyecharts词云页面设计 |
+| 小陈 | 跟踪并汇总热点项目和往期优秀项目，辅助沉淀部署ChatGLM |
+| 小杨 | 跟踪并汇总热点项目和往期优秀项目，实现词云显示效果 |
+| 小萝卜 | 参与项目讨论，部署ChatGLM，设计抽取关键词的prompt |
+| Betterme | 参与项目讨论，提供解决思路 |
+
+
 
 
