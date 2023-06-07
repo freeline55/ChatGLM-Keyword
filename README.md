@@ -1,6 +1,8 @@
-# ChatLM-Keyword
+# ChatGLM-Keyword
 
-一个基于ChatGLM的将输入文本做关键词抽取，词频统计并绘制词云图的关键词抽取项目。
+🤖️ 一个使用ChatGLM抽取上传文本文本关键词和词频，并绘制词云图的项目，目标是帮助用户分析文本和核心内容。
+
+💡 感谢Datawhale社区提供锻炼与展示的平台，感谢[langchain-ChatGLM](https://github.com/imClumsyPanda/langchain-ChatGLM) 的无私分享。
 
 ## 1. 项目预期目标
 
@@ -28,19 +30,19 @@
 
 ## 4. 项目呈现效果（截至2023/06/06）
 
-![](imgs/Picture_01.png)
+![实现效果图](imgs/Picture_01.png)
 
 ## 5. 项目贡献名单
 
 | 贡献者   | 贡献内容 |
 | ----- | ---- |
-| 星辰 | 队长 |
-| 沉淀 | 应用方向调研、gpt能力调研、langchain-chatglm部署等 |
-| 何材 | streamlit前端技术学习，pyecharts词云页面设计 |
-| 小陈 | 跟踪并汇总热点项目和往期优秀项目，辅助沉淀部署ChatGLM |
-| 小杨 | 跟踪并汇总热点项目和往期优秀项目，实现词云显示效果 |
-| 小萝卜 | 参与项目讨论，部署ChatGLM，设计抽取关键词的prompt |
-| Betterme | 参与项目讨论，提供解决思路 |
+| 星辰 | 队长，负责技术路线确定、队员任务分工、整体进度把握等 |
+| 沉淀 | 应用方向调研与gpt能力测试、ChatGLM部署与应用开发等 |
+| 何材 | streamlit前端技术研发，pyecharts词云图页面设计等 |
+| 小陈 | 跟踪并汇总往期优秀项目，部署与应用ChatGLM等 |
+| 小杨 | 跟踪并汇总往期优秀项目，实现词云图显示效果等 |
+| Betterme | 参与项目讨论，提供解决思路，分享研究心得等； |
+| 小萝卜 | 参与项目讨论，研究抽取关键词的prompt等； |
 
 
 
