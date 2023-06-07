@@ -1,0 +1,11 @@
+langchain==0.0.174
+transformers==4.29.1
+nltk~=3.8.1
+sentence-transformers
+torch~=2.0.0
+numpy~=1.23.5
+tqdm~=4.65.0
+requests~=2.28.2
+pyecharts
+streamlit
+streamlit_echarts
