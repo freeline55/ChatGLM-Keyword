@@ -20,8 +20,7 @@ nltk.data.path = [NLTK_DATA_PATH] + nltk.data.path
 @st.cache_resource(ttl=10800)
 def load_chatglm():
     llm = ChatGLM()
-    # llm.load_model(model_name_or_path="THUDM/chatglm-6b-int8", llm_device="cuda:0", use_ptuning_v2=False, use_lora=False)
-    llm.load_model(model_name_or_path="/root/.cache/huggingface/hub/models--THUDM--chatglm-6b-int8/snapshots/22906aeb32fd7952ce323dc9d25e01693b270da6", llm_device="cuda:0", use_ptuning_v2=False,use_lora=False)
+    llm.load_model(model_name_or_path="THUDM/chatglm-6b-int8", llm_device="cuda:0", use_ptuning_v2=False, use_lora=False)
     llm.temperature = 1e-3
     print("模型加载完毕")
     return llm
@@ -53,13 +52,22 @@ with col2:
 
 if uploaded_file is not None:
     content = uploaded_file.read().decode('utf-8')
-    prompt = "你扮演的角色是关键词抽取工具,请从输入的文本中抽取出10个最重要的关键词: \n" + content
+    prompt = f"你扮演的角色是关键词抽取工具,请从输入的文本中抽取出{len}个最重要的关键词,多个关键词之间用单个逗号分割: \n\n" + content
     print("prompt:", prompt)
 
     for res in get_answer(prompt):
+        res = res.strip().replace("，", ",").replace("：", ":").strip("关键词").strip(":").strip("。")
         print("回复的结果是:\n", res)
-        words = [(r[r.index(".") + 1:].strip(), content.count(r[r.index(".") + 1:].strip())) for r in res.split("\n")]
-        print("词云值列表是:\n", words)
+        words = []
+        if "." in res:
+            words = [(r[r.index(".") + 1:].strip(), content.count(r[r.index(".") + 1:].strip())) for r in res.split("\n")]
+        elif "," in res:
+            words = [(r.strip(), content.count(r.strip())) for r in res.split(",")]
+        elif "、" in res:
+            words = [(r.strip(), content.count(r.strip())) for r in res.split("、")]
+        else:
+            words = []
+        print("词云值列表是:\n", words, "\n")
 
         with col1:
             c = (
