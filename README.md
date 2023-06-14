@@ -2,7 +2,7 @@
 
 🤖️ 一个使用ChatGLM抽取上传文本关键词和词频，并绘制词云图的项目，目标是帮助用户分析文本和核心内容。
 
-💡 感谢Datawhale社区提供锻炼与展示的平台，感谢[langchain-ChatGLM](https://github.com/imClumsyPanda/langchain-ChatGLM) 的无私分享。
+💡 感谢Datawhale社区提供锻炼与展示的平台，感谢[langchain-ChatGLM](https://github.com/imClumsyPanda/langchain-ChatGLM) [ChatLLM](https://github.com/yuanjie-ai/ChatLLM) 的无私分享。
 
 ## 1. 项目预期目标
 
